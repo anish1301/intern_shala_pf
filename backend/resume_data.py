@@ -1,240 +1,158 @@
 RESUME_DATA = {
     "personal": {
-        "name": "Alex Chen",
-        "title": "Full Stack Developer & AI Enthusiast",
-        "email": "alex.chen@email.com",
-        "phone": "+1 (555) 123-4567",
-        "location": "San Francisco, CA",
-        "website": "https://alexchen.dev",
-        "github": "https://github.com/alexchen",
-        "linkedin": "https://linkedin.com/in/alexchen",
+        "name": "Anish Kumar",
+        "title": "Full Stack Developer & Competitive Programmer",
+        "email": "anishkumar130119@gmail.com",
+        "phone": "+91 9905468566",
+        "location": "Imphal, Manipur, India",
+        "github": "https://github.com/anish1301",
+        "linkedin": "https://linkedin.com/in/anish-kumar",
         "summary": (
-            "Passionate full-stack developer with 5+ years of experience building "
-            "scalable web applications and AI-powered solutions. Proficient in React, "
-            "TypeScript, Python, and cloud technologies. Strong advocate for clean code, "
-            "test-driven development, and continuous learning."
+            "B.Tech student in Electronics and Communication Engineering at IIIT Manipur "
+            "with strong expertise in full-stack development, competitive programming, and "
+            "distributed systems. ICPC Regionalist 2025 and ICPC Taiwan 2024 Global Rank 99 "
+            "(India Rank 3). Experienced in building scalable web applications using React, "
+            "Node.js, and Python."
         ),
         "bio": (
-            "I'm a software engineer based in San Francisco who loves turning complex "
-            "problems into simple, beautiful, and intuitive solutions. When I'm not coding, "
-            "you'll find me hiking in the Bay Area, reading about AI advances, or "
-            "contributing to open-source projects."
+            "I'm a software engineer and competitive programmer from India who thrives on "
+            "solving complex problems — whether it's an ICPC contest or architecting a "
+            "real-time distributed system. I've interned at companies building products "
+            "ranging from metro kiosk systems to 3D model rendering. "
+            "When I'm not coding, I lead the Coding Club at IIIT Manipur and tinker with "
+            "IoT projects like mini-satellites."
         ),
     },
     "experience": [
         {
-            "title": "Senior Full Stack Developer",
-            "company": "TechVision Inc.",
-            "location": "San Francisco, CA",
-            "period": "Jan 2023 - Present",
-            "description": "Leading development of AI-powered SaaS products serving 50K+ users.",
+            "title": "Software Development Intern",
+            "company": "NGSpurs",
+            "location": "Jamshedpur, India",
+            "period": "May 2025 – July 2025",
+            "description": "Built scalable web apps and real-time systems for high-traffic production environments.",
             "responsibilities": [
-                "Architected and led development of a microservices-based platform using Python (FastAPI) and React",
-                "Implemented real-time data processing pipeline handling 1M+ events daily",
-                "Led a team of 5 developers, conducting code reviews and mentoring junior developers",
-                "Reduced application load times by 40% through performance optimization and caching strategies",
-                "Designed and implemented CI/CD pipelines using GitHub Actions and Docker",
+                "Built scalable web apps using Java, React.js, and Node.js, integrating MongoDB and MySQL for distributed systems",
+                "Developed REST APIs with Express.js and WebSocket for real-time query systems, reducing wait times by 25%",
+                "Designed the Lucknow Metro Kiosk system, enhancing customer experience through efficient algorithms in an agile environment",
+                "Collaborated with teams to address technical challenges, delivering high-quality software for high-traffic requests",
             ],
         },
         {
-            "title": "Full Stack Developer",
-            "company": "DataFlow Solutions",
+            "title": "Software Engineering Research Intern",
+            "company": "Syntheim",
             "location": "Remote",
-            "period": "Jun 2021 - Dec 2022",
-            "description": "Built scalable web applications and RESTful APIs for enterprise clients.",
+            "period": "May 2024 – Nov 2024",
+            "description": "Optimized 3D model rendering and contributed to AI-driven software solutions.",
             "responsibilities": [
-                "Developed 10+ client-facing web applications using React, TypeScript, and Node.js",
-                "Built real-time analytics dashboard processing 500K+ data points per hour",
-                "Integrated machine learning models for predictive analytics features",
-                "Implemented comprehensive testing strategy achieving 90%+ code coverage",
-                "Collaborated with UX designers to improve user experience metrics by 35%",
-            ],
-        },
-        {
-            "title": "Frontend Developer",
-            "company": "Creative Digital Agency",
-            "location": "San Francisco, CA",
-            "period": "Mar 2020 - May 2021",
-            "description": "Created responsive, user-friendly web interfaces for various clients.",
-            "responsibilities": [
-                "Designed and developed 20+ responsive landing pages and web applications",
-                "Implemented pixel-perfect designs using React, Vue.js, and CSS animations",
-                "Built reusable component libraries that reduced development time by 30%",
-                "Optimized web performance achieving 95+ Lighthouse scores",
-                "Collaborated with cross-functional teams in an Agile environment",
-            ],
-        },
-        {
-            "title": "Junior Developer",
-            "company": "StartUp Hub",
-            "location": "San Jose, CA",
-            "period": "Sep 2019 - Feb 2020",
-            "description": "Started my professional journey building web applications.",
-            "responsibilities": [
-                "Developed full-stack features using JavaScript, Python, and PostgreSQL",
-                "Participated in code reviews and adopted best practices",
-                "Contributed to the migration from legacy systems to modern tech stack",
-                "Built automated testing suites for critical business functionality",
+                "Optimized 3D model rendering using Python and TensorFlow, improving performance by 25% in agile development cycles",
+                "Articulated solutions for ambiguous problems, collaborating with distributed teams to enhance software design",
             ],
         },
     ],
     "education": [
         {
-            "degree": "Bachelor of Science in Computer Science",
-            "school": "University of California, Berkeley",
-            "location": "Berkeley, CA",
-            "period": "2015 - 2019",
-            "gpa": "3.8/4.0",
+            "degree": "B.Tech, Electronics and Communication Engineering",
+            "school": "IIIT Manipur",
+            "location": "Imphal, India",
+            "period": "2022 – 2026",
+            "gpa": "7.29 CPI",
             "highlights": [
-                "Dean's List - All semesters",
-                "Senior thesis on Natural Language Processing",
-                "Teaching Assistant for Introduction to AI",
-                "President of Computer Science Club",
+                "Coursework: Data Structures, Algorithm Design, Computer Networks, Software Engineering",
+                "Coding Club Lead, 2025",
+                "Top 5% in college coding contests",
             ],
-        }
+        },
+        {
+            "degree": "Higher Secondary (Class XII)",
+            "school": "De Nobili School, Dighwadigh",
+            "location": "India",
+            "period": "2022",
+            "gpa": "89.5%",
+            "highlights": [],
+        },
+        {
+            "degree": "Secondary Education (Class X)",
+            "school": "De Nobili School, Dighwadigh",
+            "location": "India",
+            "period": "2020",
+            "gpa": "90.2%",
+            "highlights": [
+                "International Rank 294 in IGKO '20",
+            ],
+        },
     ],
     "skills": {
-        "frontend": [
-            "React",
-            "Next.js",
-            "TypeScript",
-            "JavaScript",
-            "Tailwind CSS",
-            "HTML5/CSS3",
-            "Vue.js",
-            "Framer Motion",
-        ],
-        "backend": [
-            "Python",
-            "FastAPI",
-            "Node.js",
-            "Express.js",
-            "Django",
-            "RESTful APIs",
-            "GraphQL",
-        ],
-        "database": ["PostgreSQL", "MongoDB", "Redis", "SQLite", "Firebase"],
-        "devops": [
-            "Docker",
-            "AWS (EC2, S3, Lambda)",
-            "GitHub Actions",
-            "CI/CD",
-            "Nginx",
-            "Linux",
-        ],
-        "tools": ["Git", "VS Code", "Figma", "Jira", "Postman", "Webpack", "Vite"],
-        "ai_ml": [
-            "OpenAI API",
-            "LangChain",
-            "Hugging Face",
-            "TensorFlow",
-            "Pandas",
-            "NumPy",
-        ],
+        "programming": ["Java", "C++", "Python", "JavaScript"],
+        "frontend": ["React.js", "HTML5", "CSS3", "JavaScript"],
+        "backend": ["Node.js", "Express.js", "REST APIs", "WebSocket"],
+        "database": ["MySQL", "MongoDB", "Database Management"],
+        "devops": ["Git", "GitHub", "GitLab", "Docker", "CI/CD", "GCP"],
+        "dsa": ["Algorithm Design", "Complexity Analysis", "Problem-Solving"],
+        "other": ["Google Maps API", "Twilio API", "TensorFlow", "SQL"],
     },
     "projects": [
         {
-            "name": "AI Content Platform",
+            "name": "IoT Mini-Satellite for Campus Communication & Disaster Prediction",
             "description": (
-                "A full-stack content generation platform powered by GPT models with "
-                "content scheduling, analytics dashboard, and team collaboration features."
+                "A LoRa-based mesh network enabling internet-independent campus communication "
+                "and real-time environmental sensing during outages. Integrates multi-sensor "
+                "disaster prediction using ML for floods, fires, and air-quality crises."
             ),
-            "technologies": [
-                "React",
-                "Python",
-                "FastAPI",
-                "OpenAI",
-                "PostgreSQL",
-                "Redis",
-                "Docker",
-            ],
+            "technologies": ["LoRa", "IoT", "Machine Learning", "Python", "Sensors"],
             "highlights": [
-                "Serves 5K+ monthly active users",
-                "Processes 10K+ content pieces monthly",
-                "99.9% uptime",
+                "Internet-independent mesh network",
+                "ML-powered disaster prediction",
+                "Real-time environmental sensing",
+                "Multi-zone early-warning alerts",
             ],
         },
         {
-            "name": "E-Commerce Analytics Dashboard",
+            "name": "Restaurant Ordering System",
             "description": (
-                "Real-time analytics dashboard for e-commerce businesses with interactive "
-                "charts, inventory management, and sales forecasting using ML models."
+                "Full-stack restaurant ordering application with real-time updates, JWT "
+                "authentication, and scalable architecture deployed with Docker and CI/CD."
             ),
-            "technologies": [
-                "Next.js",
-                "TypeScript",
-                "D3.js",
-                "Python",
-                "MongoDB",
-                "TensorFlow",
-            ],
+            "technologies": ["React.js", "Node.js", "Express.js", "MongoDB", "Docker", "WebSocket"],
             "highlights": [
-                "Real-time data visualization",
-                "ML-powered sales predictions",
-                "Mobile responsive design",
+                "JWT authentication",
+                "Real-time WebSocket updates",
+                "Docker + CI/CD deployment",
+                "Scalable query systems",
             ],
         },
         {
-            "name": "DevOps Automation Tool",
+            "name": "Lucknow Metro Kiosk System",
             "description": (
-                "Automated CI/CD pipeline management tool with Docker orchestration, "
-                "monitoring dashboard, and smart deployment tracking."
+                "Interactive kiosk system for the Lucknow Metro designed during internship at "
+                "NGSpurs, featuring efficient route algorithms and customer-facing interface."
             ),
-            "technologies": ["Python", "Docker", "AWS", "Redis", "React", "WebSocket"],
+            "technologies": ["Java", "React.js", "Node.js", "MySQL", "Google Maps API"],
             "highlights": [
-                "Reduced deployment time by 60%",
-                "Automated 90% of manual processes",
-                "Used by 3 engineering teams",
-            ],
-        },
-        {
-            "name": "Real-time Chat Application",
-            "description": (
-                "Modern messaging application with end-to-end encryption, file sharing, "
-                "group channels, and AI-powered smart replies."
-            ),
-            "technologies": [
-                "React",
-                "Node.js",
-                "Socket.io",
-                "MongoDB",
-                "Redis",
-                "OpenAI",
-            ],
-            "highlights": [
-                "Sub-50ms message delivery",
-                "E2E encryption",
-                "AI-powered reply suggestions",
+                "Efficient routing algorithms",
+                "Customer-facing UI",
+                "Real-time data integration",
+                "Built during NGSpurs internship",
             ],
         },
     ],
-    "certifications": [
-        {
-            "name": "AWS Certified Developer - Associate",
-            "issuer": "Amazon Web Services",
-            "year": 2023,
-        },
-        {
-            "name": "Professional Scrum Master I",
-            "issuer": "Scrum.org",
-            "year": 2022,
-        },
-        {
-            "name": "Google Cloud Professional Data Engineer",
-            "issuer": "Google Cloud",
-            "year": 2022,
-        },
+    "achievements": [
+        {"name": "ICPC Regionalist", "year": 2025},
+        {"name": "ICPC Taiwan 2024 — Global Rank 99, India Rank 3", "year": 2024},
+        {"name": "Specialist on Codeforces", "year": None},
+        {"name": "CodeChef Starters 225 — Global Rank 260", "year": None},
+        {"name": "Coding Club Lead, IIIT Manipur", "year": 2025},
+        {"name": "Top 5% in college coding contests", "year": None},
+        {"name": "International Rank 294 in IGKO '20", "year": 2020},
     ],
     "languages": [
-        "English (Native)",
-        "Mandarin Chinese (Fluent)",
-        "Spanish (Conversational)",
+        "English (Fluent)",
+        "Hindi (Native)",
     ],
     "interests": [
-        "Open Source Contribution",
-        "AI/ML Research",
-        "Hiking",
-        "Photography",
-        "Tech Blogging",
+        "Competitive Programming",
+        "IoT & Embedded Systems",
+        "Distributed Systems",
+        "Open Source",
+        "Algorithm Design",
     ],
 }

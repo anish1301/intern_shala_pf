@@ -8,10 +8,10 @@ export default function Footer() {
           {/* Logo & copyright */}
           <div className="flex flex-col items-center md:items-start gap-1">
             <a href="#home" className="text-xl font-extrabold gradient-text">
-              {'<AC />'}
+              {'<AK />'}
             </a>
             <p className="text-gray-600 text-sm">
-              © {new Date().getFullYear()} Alex Chen. All rights reserved.
+              © {new Date().getFullYear()} Anish Kumar. All rights reserved.
             </p>
           </div>
 

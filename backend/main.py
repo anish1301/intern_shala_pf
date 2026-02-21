@@ -54,7 +54,7 @@ class ContactRequest(BaseModel):
 
 def get_system_prompt() -> str:
     resume_json = json.dumps(RESUME_DATA, separators=(',', ':'))
-    return f"""You are an AI assistant on Alex Chen's portfolio. Answer only from this resume data. Be concise (2-3 sentences). Use markdown for lists.
+    return f"""You are an AI assistant on Anish Kumar's portfolio. Answer only from this resume data. Be concise (2-3 sentences). Use markdown for lists.
 
 DATA:{resume_json}
 """

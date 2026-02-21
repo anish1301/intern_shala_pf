@@ -77,7 +77,7 @@ export default function About() {
                 <div className="absolute -bottom-3 -left-3 w-16 h-16 border-b-2 border-l-2 border-purple-500/30 rounded-bl-xl" />
                 {/* Floating badge */}
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-2 glow-sm">
-                  <span className="text-sm font-semibold gradient-text">5+ Years</span>
+                  <span className="text-sm font-semibold gradient-text">ICPC Regionalist</span>
                 </div>
               </div>
             </div>
@@ -87,30 +87,29 @@ export default function About() {
           <ScrollReveal direction="right">
             <div className="space-y-6">
               <h3 className="text-2xl md:text-3xl font-bold text-white leading-snug">
-                A passionate developer creating{' '}
-                <span className="gradient-text">digital experiences</span>
+                A passionate developer &{' '}
+                <span className="gradient-text">competitive programmer</span>
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                With over 5 years of experience in full-stack development, I specialize in
-                building scalable web applications using modern technologies. My expertise
-                spans across React, TypeScript, Python, and cloud infrastructure—always
-                prioritizing clean, maintainable code.
+                B.Tech student at IIIT Manipur with strong expertise in full-stack development
+                and competitive programming. I've built scalable web apps, real-time systems,
+                and IoT projects using React, Node.js, Java, Python, and more.
               </p>
               <p className="text-gray-400 leading-relaxed">
-                I'm deeply passionate about AI/ML and love exploring how these technologies
-                can be woven into everyday applications. When I'm not coding, you'll find me
-                contributing to open-source projects or hiking the Bay Area trails.
+                Ranked Global 99 (India Rank 3) at ICPC Taiwan 2024 and an ICPC Regionalist 2025.
+                I lead the Coding Club at IIIT Manipur and love solving complex algorithmic
+                challenges on Codeforces and CodeChef.
               </p>
 
               <div className="flex flex-wrap gap-3 pt-2">
                 <span className="px-4 py-1.5 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
-                  UC Berkeley '19
+                  IIIT Manipur '26
                 </span>
                 <span className="px-4 py-1.5 rounded-full text-xs font-medium bg-purple-500/10 text-purple-300 border border-purple-500/20">
-                  AWS Certified
+                  ICPC Regionalist
                 </span>
                 <span className="px-4 py-1.5 rounded-full text-xs font-medium bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">
-                  3 Certifications
+                  Coding Club Lead
                 </span>
               </div>
 
@@ -125,10 +124,10 @@ export default function About() {
         {/* Stats counters */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24">
           {[
-            { end: 5, suffix: '+', label: 'Years Experience' },
-            { end: 50, suffix: '+', label: 'Projects Completed' },
-            { end: 30, suffix: '+', label: 'Technologies' },
-            { end: 15, suffix: '+', label: 'Happy Clients' },
+            { end: 99, suffix: '', label: 'ICPC Global Rank' },
+            { end: 3, suffix: '', label: 'ICPC India Rank' },
+            { end: 2, suffix: '', label: 'Internships' },
+            { end: 10, suffix: '+', label: 'Technologies' },
           ].map((stat) => (
             <ScrollReveal key={stat.label}>
               <div className="glass rounded-2xl p-6 hover:border-indigo-500/20 transition-all duration-300">

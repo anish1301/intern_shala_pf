@@ -1,10 +1,12 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import {
-  SiReact, SiTypescript, SiPython, SiNodedotjs,
-  SiPostgresql, SiDocker, SiAmazonwebservices, SiGit,
-  SiTailwindcss, SiFastapi, SiMongodb, SiRedis,
+  SiReact, SiPython, SiNodedotjs,
+  SiDocker, SiGit, SiCplusplus,
+  SiMongodb, SiMysql, SiJavascript,
+  SiGooglecloud, SiTensorflow,
 } from 'react-icons/si';
+import { FaJava } from 'react-icons/fa';
 import ScrollReveal from './ScrollReveal';
 
 /* ── Data ────────────────────────────────────────────────────────────── */
@@ -18,35 +20,35 @@ interface Skill {
 
 const skillCategories: { title: string; skills: Skill[] }[] = [
   {
-    title: 'Frontend',
+    title: 'Programming & DSA',
     skills: [
-      { name: 'React / Next.js', level: 95, icon: <SiReact />, color: '#61DAFB' },
-      { name: 'TypeScript', level: 90, icon: <SiTypescript />, color: '#3178C6' },
-      { name: 'Tailwind CSS', level: 92, icon: <SiTailwindcss />, color: '#06B6D4' },
+      { name: 'Java', level: 90, icon: <FaJava />, color: '#ED8B00' },
+      { name: 'C++', level: 88, icon: <SiCplusplus />, color: '#00599C' },
+      { name: 'Python', level: 85, icon: <SiPython />, color: '#3776AB' },
     ],
   },
   {
-    title: 'Backend',
+    title: 'Full-Stack Development',
     skills: [
-      { name: 'Python', level: 93, icon: <SiPython />, color: '#3776AB' },
-      { name: 'Node.js', level: 88, icon: <SiNodedotjs />, color: '#539E43' },
-      { name: 'FastAPI', level: 85, icon: <SiFastapi />, color: '#009688' },
+      { name: 'React.js', level: 88, icon: <SiReact />, color: '#61DAFB' },
+      { name: 'Node.js / Express.js', level: 85, icon: <SiNodedotjs />, color: '#539E43' },
+      { name: 'JavaScript', level: 90, icon: <SiJavascript />, color: '#F7DF1E' },
     ],
   },
   {
-    title: 'Database & Cloud',
+    title: 'Databases',
     skills: [
-      { name: 'PostgreSQL', level: 87, icon: <SiPostgresql />, color: '#4169E1' },
+      { name: 'MySQL', level: 85, icon: <SiMysql />, color: '#4479A1' },
       { name: 'MongoDB', level: 82, icon: <SiMongodb />, color: '#47A248' },
-      { name: 'Redis', level: 80, icon: <SiRedis />, color: '#DC382D' },
+      { name: 'TensorFlow', level: 70, icon: <SiTensorflow />, color: '#FF6F00' },
     ],
   },
   {
     title: 'DevOps & Tools',
     skills: [
-      { name: 'Docker', level: 85, icon: <SiDocker />, color: '#2496ED' },
-      { name: 'AWS', level: 80, icon: <SiAmazonwebservices />, color: '#FF9900' },
-      { name: 'Git', level: 92, icon: <SiGit />, color: '#F05032' },
+      { name: 'Docker', level: 80, icon: <SiDocker />, color: '#2496ED' },
+      { name: 'GCP', level: 75, icon: <SiGooglecloud />, color: '#4285F4' },
+      { name: 'Git', level: 90, icon: <SiGit />, color: '#F05032' },
     ],
   },
 ];

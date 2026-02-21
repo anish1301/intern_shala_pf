@@ -7,74 +7,52 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
-    title: 'AI Content Platform',
+    title: 'IoT Mini-Satellite',
     description:
-      'Full-stack content generation platform powered by GPT models. Features content scheduling, analytics dashboard, and team collaboration.',
-    emoji: '🤖',
+      'LoRa-based mesh network for internet-independent campus communication and real-time disaster prediction using ML for floods, fires, and air-quality crises.',
+    emoji: '🛰️',
     gradient: 'from-violet-500/20 to-indigo-500/20',
-    tags: ['React', 'Python', 'OpenAI', 'PostgreSQL'],
+    tags: ['LoRa', 'IoT', 'ML', 'Python'],
     github: '#',
     live: '#',
     category: 'fullstack',
   },
   {
-    title: 'E-Commerce Dashboard',
+    title: 'Restaurant Ordering System',
     description:
-      'Real-time analytics dashboard for e-commerce businesses with interactive charts, inventory management, and ML-powered sales forecasting.',
-    emoji: '📊',
-    gradient: 'from-blue-500/20 to-cyan-500/20',
-    tags: ['Next.js', 'TypeScript', 'D3.js', 'MongoDB'],
-    github: '#',
-    live: '#',
-    category: 'frontend',
-  },
-  {
-    title: 'DevOps Pipeline Tool',
-    description:
-      'Automated CI/CD pipeline management tool with Docker orchestration, real-time monitoring, and smart deployment tracking.',
-    emoji: '🔧',
-    gradient: 'from-emerald-500/20 to-green-500/20',
-    tags: ['Python', 'Docker', 'AWS', 'Redis'],
-    github: '#',
-    live: '#',
-    category: 'backend',
-  },
-  {
-    title: 'Real-time Chat App',
-    description:
-      'Modern messaging application with end-to-end encryption, file sharing, group channels, and AI-powered smart replies.',
-    emoji: '💬',
+      'Full-stack ordering app with JWT authentication, real-time WebSocket updates, and Docker + CI/CD deployment for scalable operations.',
+    emoji: '🍕',
     gradient: 'from-pink-500/20 to-rose-500/20',
-    tags: ['React', 'Node.js', 'Socket.io', 'MongoDB'],
+    tags: ['React.js', 'Node.js', 'MongoDB', 'Docker'],
     github: '#',
     live: '#',
     category: 'fullstack',
   },
   {
-    title: 'Task Management System',
+    title: 'Lucknow Metro Kiosk',
     description:
-      'Kanban-style project management tool with drag-and-drop, team assignments, real-time sync, and progress tracking.',
-    emoji: '📋',
-    gradient: 'from-amber-500/20 to-orange-500/20',
-    tags: ['React', 'FastAPI', 'PostgreSQL', 'WebSocket'],
+      'Interactive kiosk for Lucknow Metro with efficient routing algorithms and Google Maps API integration, built during NGSpurs internship.',
+    emoji: '🚇',
+    gradient: 'from-blue-500/20 to-cyan-500/20',
+    tags: ['Java', 'React.js', 'MySQL', 'Maps API'],
     github: '#',
     live: '#',
     category: 'fullstack',
   },
   {
-    title: 'Weather Analytics API',
+    title: '3D Model Renderer',
     description:
-      'RESTful API that aggregates weather data from multiple sources with predictive analysis and historical trend visualization.',
-    emoji: '🌤️',
-    gradient: 'from-sky-500/20 to-blue-500/20',
-    tags: ['Python', 'FastAPI', 'Redis', 'Docker'],
+      'Optimized 3D model rendering pipeline built during Syntheim internship using Python and TensorFlow, achieving 25% performance improvement.',
+    emoji: '🎨',
+    gradient: 'from-emerald-500/20 to-green-500/20',
+    tags: ['Python', 'TensorFlow', 'ML'],
     github: '#',
     live: '#',
     category: 'backend',
   },
 ];
 
-const categories = ['all', 'fullstack', 'frontend', 'backend'];
+const categories = ['all', 'fullstack', 'backend'];
 
 /* ── Component ───────────────────────────────────────────────────────── */
 

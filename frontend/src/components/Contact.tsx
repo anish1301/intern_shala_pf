@@ -65,9 +65,9 @@ export default function Contact() {
 
               <div className="space-y-5">
                 {[
-                  { icon: <HiMail size={22} />, label: 'Email', value: 'alex.chen@email.com' },
-                  { icon: <HiLocationMarker size={22} />, label: 'Location', value: 'San Francisco, CA' },
-                  { icon: <HiPhone size={22} />, label: 'Phone', value: '+1 (555) 123-4567' },
+                  { icon: <HiMail size={22} />, label: 'Email', value: 'anishkumar130119@gmail.com' },
+                  { icon: <HiLocationMarker size={22} />, label: 'Location', value: 'Imphal, Manipur, India' },
+                  { icon: <HiPhone size={22} />, label: 'Phone', value: '+91 9905468566' },
                 ].map((item) => (
                   <div key={item.label} className="flex items-center gap-4 group">
                     <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500/20 group-hover:scale-110 transition-all duration-300">
@@ -85,8 +85,8 @@ export default function Contact() {
 
               <div className="flex gap-3 pt-2">
                 {[
-                  { icon: <FaGithub size={18} />, href: '#' },
-                  { icon: <FaLinkedin size={18} />, href: '#' },
+                  { icon: <FaGithub size={18} />, href: 'https://github.com/anish1301' },
+                  { icon: <FaLinkedin size={18} />, href: 'https://linkedin.com/in/anish-kumar' },
                   { icon: <FaTwitter size={18} />, href: '#' },
                 ].map((social, idx) => (
                   <a

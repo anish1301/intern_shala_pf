@@ -4,55 +4,29 @@ import ScrollReveal from './ScrollReveal';
 
 const experiences = [
   {
-    title: 'Senior Full Stack Developer',
-    company: 'TechVision Inc.',
-    period: '2023 — Present',
+    title: 'Software Development Intern',
+    company: 'NGSpurs',
+    period: 'May 2025 — Jul 2025',
     description:
-      'Leading development of AI-powered SaaS products. Architecting microservices using Python and React, serving 50K+ users.',
+      'Built scalable web apps and real-time systems using Java, React.js, and Node.js for high-traffic production environments.',
     highlights: [
-      'Led team of 5 developers',
-      'Reduced load times by 40%',
-      'CI/CD pipeline design',
-      '1M+ events/day pipeline',
+      'REST APIs + WebSocket',
+      'Wait times reduced 25%',
+      'Metro Kiosk system',
+      'MongoDB & MySQL',
     ],
   },
   {
-    title: 'Full Stack Developer',
-    company: 'DataFlow Solutions',
-    period: '2021 — 2022',
+    title: 'Software Engineering Research Intern',
+    company: 'Syntheim',
+    period: 'May 2024 — Nov 2024',
     description:
-      'Built scalable web applications and RESTful APIs for enterprise clients with a focus on real-time analytics.',
+      'Optimized 3D model rendering using Python and TensorFlow, improving performance by 25% in agile development cycles.',
     highlights: [
-      '10+ client projects',
-      'Real-time dashboard',
-      'ML model integration',
-      '90%+ test coverage',
-    ],
-  },
-  {
-    title: 'Frontend Developer',
-    company: 'Creative Digital Agency',
-    period: '2020 — 2021',
-    description:
-      'Created responsive, pixel-perfect web interfaces and reusable component libraries for diverse clients.',
-    highlights: [
-      '20+ landing pages',
-      'UX metrics +35%',
-      '95+ Lighthouse score',
-      'Component library',
-    ],
-  },
-  {
-    title: 'Junior Developer',
-    company: 'StartUp Hub',
-    period: '2019 — 2020',
-    description:
-      'Kicked off my professional career by building full-stack features and migrating legacy systems to modern stacks.',
-    highlights: [
-      'Full stack features',
-      'Agile workflow',
-      'Legacy migration',
-      'Automated testing',
+      'Python + TensorFlow',
+      'Performance +25%',
+      'Distributed teams',
+      'Research-driven',
     ],
   },
 ];

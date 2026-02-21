@@ -21,7 +21,7 @@ export default function ChatWidget() {
       id: 'welcome',
       role: 'assistant',
       content:
-        "Hi! 👋 I'm Alex's AI assistant. Ask me anything about his experience, skills, projects, or education and I'll give you accurate answers from his resume!",
+        "Hi! 👋 I'm Anish's AI assistant. Ask me anything about his experience, skills, projects, achievements, or education and I'll give you accurate answers from his resume!",
     },
   ]);
   const [input, setInput] = useState('');
@@ -110,7 +110,7 @@ export default function ChatWidget() {
   /* ── Quick prompts ─────────────────────────────────────────────────── */
 
   const quickPrompts = [
-    'What are his skills?',
+    'What are his achievements?',
     'Tell me about his experience',
     'What projects has he built?',
   ];
@@ -299,7 +299,7 @@ export default function ChatWidget() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onKeyDown={handleKeyDown}
-                  placeholder="Ask about Alex's resume..."
+                  placeholder="Ask about Anish's resume..."
                   className="flex-1 bg-white/[0.03] border border-white/10 rounded-xl px-4 py-2.5 text-white text-sm placeholder-gray-600 focus:border-indigo-500/50 focus:outline-none focus:ring-1 focus:ring-indigo-500/30 transition-all duration-200"
                   disabled={isLoading}
                 />
