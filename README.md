@@ -1,4 +1,4 @@
-# Alex Chen — Portfolio with AI Chat
+# Anish Kumar — Portfolio with AI Chat
 
 A modern, animated personal portfolio website with an AI-powered chat assistant that can answer questions about the resume. Built with **React + TypeScript** frontend and **Python (FastAPI)** backend.
 
@@ -37,7 +37,7 @@ A modern, animated personal portfolio website with an AI-powered chat assistant 
 3. Open `backend/.env` and paste your key:
    ```
    OPENROUTER_API_KEY=sk-or-v1-your-key-here
-   AI_MODEL=meta-llama/llama-3.2-3b-instruct:free
+   AI_MODEL=nvidia/nemotron-nano-9b-v2:free
    ```
 
 ### 2. Start the Backend
@@ -110,9 +110,9 @@ Edit `backend/resume_data.py` — the AI assistant will automatically use the up
 ### Change the AI Model
 
 Edit `AI_MODEL` in `backend/.env`. Free models on OpenRouter include:
+- `nvidia/nemotron-nano-9b-v2:free`
 - `meta-llama/llama-3.2-3b-instruct:free`
-- `mistralai/mistral-7b-instruct:free`
-- `google/gemma-2-9b-it:free`
+- `qwen/qwen3-4b:free`
 
 ### Change Colors
 

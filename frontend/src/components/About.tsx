@@ -113,10 +113,14 @@ export default function About() {
                 </span>
               </div>
 
-              <button className="inline-flex items-center gap-2 px-7 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300 hover:scale-105 mt-2">
+              <a
+                href="/Anish_Kumar_Resume.pdf"
+                download="Anish_Kumar_Resume.pdf"
+                className="inline-flex items-center gap-2 px-7 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300 hover:scale-105 mt-2"
+              >
                 <HiDownload className="text-lg" />
                 Download Resume
-              </button>
+              </a>
             </div>
           </ScrollReveal>
         </div>
