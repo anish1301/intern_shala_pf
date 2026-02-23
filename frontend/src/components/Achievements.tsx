@@ -42,7 +42,7 @@ const achievements = [
   },
   {
     icon: <HiCode />,
-    title: 'CodeChef 4-Star',
+    title: 'CodeChef 3-Star',
     subtitle: 'National Level Competitor',
     color: 'from-purple-400 to-pink-500',
     glow: 'shadow-purple-500/20',

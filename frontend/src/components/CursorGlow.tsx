@@ -38,18 +38,32 @@ export default function CursorGlow() {
       className="pointer-events-none fixed inset-0 z-[9999]"
       style={{ opacity: visible ? 1 : 0 }}
     >
-      {/* Outer soft glow */}
+      {/* Wide ambient glow */}
       <motion.div
         className="absolute rounded-full"
         style={{
           x: springX,
           y: springY,
-          width: 400,
-          height: 400,
+          width: 600,
+          height: 600,
           translateX: '-50%',
           translateY: '-50%',
           background:
-            'radial-gradient(circle, rgba(99,102,241,0.06) 0%, rgba(139,92,246,0.03) 40%, transparent 70%)',
+            'radial-gradient(circle, rgba(99,102,241,0.10) 0%, rgba(139,92,246,0.06) 30%, rgba(6,182,212,0.03) 55%, transparent 75%)',
+        }}
+      />
+      {/* Mid-ring glow */}
+      <motion.div
+        className="absolute rounded-full"
+        style={{
+          x: springX,
+          y: springY,
+          width: 250,
+          height: 250,
+          translateX: '-50%',
+          translateY: '-50%',
+          background:
+            'radial-gradient(circle, rgba(99,102,241,0.14) 0%, rgba(139,92,246,0.07) 50%, transparent 80%)',
         }}
       />
       {/* Inner bright dot */}
@@ -58,12 +72,13 @@ export default function CursorGlow() {
         style={{
           x: springX,
           y: springY,
-          width: 8,
-          height: 8,
+          width: 10,
+          height: 10,
           translateX: '-50%',
           translateY: '-50%',
-          background: 'rgba(99,102,241,0.5)',
-          boxShadow: '0 0 20px rgba(99,102,241,0.3), 0 0 60px rgba(139,92,246,0.15)',
+          background: 'rgba(99,102,241,0.7)',
+          boxShadow:
+            '0 0 12px rgba(99,102,241,0.6), 0 0 30px rgba(99,102,241,0.4), 0 0 80px rgba(139,92,246,0.25), 0 0 120px rgba(6,182,212,0.1)',
         }}
       />
     </motion.div>

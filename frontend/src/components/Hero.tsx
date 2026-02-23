@@ -137,7 +137,7 @@ export default function Hero() {
             <FaLinkedin size={22} />
           </a>
           <a
-            href="https://codeforces.com/profile/anish1301"
+            href="https://codeforces.com/profile/mysterious_penguin"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-cyan-400 transition-all duration-300 hover:scale-125 hover:-translate-y-0.5"
@@ -145,7 +145,7 @@ export default function Hero() {
             <SiCodeforces size={22} />
           </a>
           <a
-            href="https://codechef.com/users/anish1301"
+            href="https://www.codechef.com/users/anish_1301"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-amber-400 transition-all duration-300 hover:scale-125 hover:-translate-y-0.5"
