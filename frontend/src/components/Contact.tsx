@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ScrollReveal from './ScrollReveal';
+import SplitText from './SplitText';
 import { HiMail, HiLocationMarker, HiPhone } from 'react-icons/hi';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
@@ -39,7 +40,8 @@ export default function Contact() {
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Get In <span className="gradient-text">Touch</span>
+              <SplitText text="Get In " />
+              <SplitText text="Touch" gradientClass="gradient-text" delay={0.2} />
             </h2>
             <p className="text-gray-400 max-w-xl mx-auto">
               Have a project in mind or want to collaborate? Feel free to reach out!

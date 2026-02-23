@@ -2,6 +2,7 @@ import { useRef, useEffect, useState } from 'react';
 import { useInView } from 'framer-motion';
 import { HiDownload } from 'react-icons/hi';
 import ScrollReveal from './ScrollReveal';
+import SplitText from './SplitText';
 
 /* ── Animated Counter ────────────────────────────────────────────────── */
 
@@ -55,7 +56,8 @@ export default function About() {
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              About <span className="gradient-text">Me</span>
+              <SplitText text="About " />
+              <SplitText text="Me" gradientClass="gradient-text" delay={0.2} />
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full" />
           </div>

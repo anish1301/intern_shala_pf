@@ -1,4 +1,5 @@
 import ScrollReveal from './ScrollReveal';
+import SplitText from './SplitText';
 
 /* ── Data ────────────────────────────────────────────────────────────── */
 
@@ -40,7 +41,8 @@ export default function Experience() {
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Work <span className="gradient-text">Experience</span>
+              <SplitText text="Work " />
+              <SplitText text="Experience" gradientClass="gradient-text" delay={0.2} />
             </h2>
             <p className="text-gray-400 max-w-xl mx-auto">
               My professional journey and the impact I've made along the way.

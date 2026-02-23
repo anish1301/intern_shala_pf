@@ -8,6 +8,7 @@ import {
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 import ScrollReveal from './ScrollReveal';
+import SplitText from './SplitText';
 
 /* ── Data ────────────────────────────────────────────────────────────── */
 
@@ -97,7 +98,8 @@ export default function Skills() {
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              My <span className="gradient-text">Skills</span>
+              <SplitText text="My " />
+              <SplitText text="Skills" gradientClass="gradient-text" delay={0.15} />
             </h2>
             <p className="text-gray-400 max-w-xl mx-auto">
               Technologies and tools I work with daily to build exceptional products.

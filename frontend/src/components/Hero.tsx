@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { HiArrowDown } from 'react-icons/hi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiCodeforces, SiCodechef } from 'react-icons/si';
+import TextScramble from './TextScramble';
+import Magnetic from './Magnetic';
 
 const roles = [
   'Full Stack Developer',
@@ -78,7 +80,12 @@ export default function Hero() {
           variants={childVariants}
           className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight"
         >
-          <span className="gradient-text shimmer-text">Anish Kumar</span>
+          <TextScramble
+            text="Anish Kumar"
+            delay={1400}
+            speed={120}
+            className="gradient-text shimmer-text"
+          />
         </motion.h1>
 
         <motion.div
@@ -101,57 +108,69 @@ export default function Hero() {
           variants={childVariants}
           className="flex flex-wrap items-center justify-center gap-4"
         >
-          <a
-            href="#projects"
-            className="group relative px-8 py-3.5 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full text-white font-semibold overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-indigo-500/25 hover:scale-105"
-          >
-            <span className="relative z-10">View My Work</span>
-            <span className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </a>
-          <a
-            href="#contact"
-            className="px-8 py-3.5 border border-indigo-500/30 rounded-full text-indigo-400 font-semibold hover:bg-indigo-500/10 hover:border-indigo-500/50 transition-all duration-300 hover:scale-105"
-          >
-            Get In Touch
-          </a>
+          <Magnetic strength={10}>
+            <a
+              href="#projects"
+              className="group relative px-8 py-3.5 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full text-white font-semibold overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-indigo-500/25 hover:scale-105"
+            >
+              <span className="relative z-10">View My Work</span>
+              <span className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </a>
+          </Magnetic>
+          <Magnetic strength={10}>
+            <a
+              href="#contact"
+              className="px-8 py-3.5 border border-indigo-500/30 rounded-full text-indigo-400 font-semibold hover:bg-indigo-500/10 hover:border-indigo-500/50 transition-all duration-300 hover:scale-105"
+            >
+              Get In Touch
+            </a>
+          </Magnetic>
         </motion.div>
 
         <motion.div
           variants={childVariants}
           className="flex items-center justify-center gap-6 mt-14"
         >
-          <a
-            href="https://github.com/anish1301"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-white transition-all duration-300 hover:scale-125 hover:-translate-y-0.5"
-          >
-            <FaGithub size={22} />
-          </a>
-          <a
-            href="https://linkedin.com/in/anish-kumar"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-white transition-all duration-300 hover:scale-125 hover:-translate-y-0.5"
-          >
-            <FaLinkedin size={22} />
-          </a>
-          <a
-            href="https://codeforces.com/profile/mysterious_penguin"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-cyan-400 transition-all duration-300 hover:scale-125 hover:-translate-y-0.5"
-          >
-            <SiCodeforces size={22} />
-          </a>
-          <a
-            href="https://www.codechef.com/users/anish_1301"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-amber-400 transition-all duration-300 hover:scale-125 hover:-translate-y-0.5"
-          >
-            <SiCodechef size={22} />
-          </a>
+          <Magnetic strength={12}>
+            <a
+              href="https://github.com/anish1301"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-white transition-all duration-300 hover:scale-125 hover:-translate-y-0.5"
+            >
+              <FaGithub size={22} />
+            </a>
+          </Magnetic>
+          <Magnetic strength={12}>
+            <a
+              href="https://linkedin.com/in/anish-kumar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-white transition-all duration-300 hover:scale-125 hover:-translate-y-0.5"
+            >
+              <FaLinkedin size={22} />
+            </a>
+          </Magnetic>
+          <Magnetic strength={12}>
+            <a
+              href="https://codeforces.com/profile/mysterious_penguin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-cyan-400 transition-all duration-300 hover:scale-125 hover:-translate-y-0.5"
+            >
+              <SiCodeforces size={22} />
+            </a>
+          </Magnetic>
+          <Magnetic strength={12}>
+            <a
+              href="https://www.codechef.com/users/anish_1301"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-amber-400 transition-all duration-300 hover:scale-125 hover:-translate-y-0.5"
+            >
+              <SiCodechef size={22} />
+            </a>
+          </Magnetic>
           <div className="w-12 h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent" />
           <span className="text-gray-600 text-sm">Imphal, Manipur, India</span>
         </motion.div>

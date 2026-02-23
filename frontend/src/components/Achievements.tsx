@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import ScrollReveal from './ScrollReveal';
+import SplitText from './SplitText';
 import {
   HiGlobeAlt,
   HiStar,
@@ -161,7 +162,8 @@ export default function Achievements() {
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Achievements & <span className="gradient-text">Awards</span>
+              <SplitText text="Achievements & " />
+              <SplitText text="Awards" gradientClass="gradient-text" delay={0.3} />
             </h2>
             <p className="text-gray-400 max-w-xl mx-auto">
               Milestones from my competitive programming journey and beyond.

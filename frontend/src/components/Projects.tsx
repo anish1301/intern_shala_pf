@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence, useMotionTemplate, useMotionValue } from 'framer-motion';
 import ScrollReveal from './ScrollReveal';
+import SplitText from './SplitText';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 /* ── Data ────────────────────────────────────────────────────────────── */
@@ -68,7 +69,8 @@ export default function Projects() {
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Featured <span className="gradient-text">Projects</span>
+              <SplitText text="Featured " />
+              <SplitText text="Projects" gradientClass="gradient-text" delay={0.25} />
             </h2>
             <p className="text-gray-400 max-w-xl mx-auto">
               A showcase of my recent work — from full-stack apps to developer tools.
