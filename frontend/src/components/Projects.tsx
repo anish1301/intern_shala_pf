@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useRef } from 'react';
+import { motion, AnimatePresence, useMotionTemplate, useMotionValue } from 'framer-motion';
 import ScrollReveal from './ScrollReveal';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
@@ -100,15 +100,52 @@ export default function Projects() {
         <motion.div layout className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <AnimatePresence mode="popLayout">
             {filtered.map((project) => (
-              <motion.div
-                key={project.title}
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
-                className="glass rounded-2xl overflow-hidden group hover:border-indigo-500/20 transition-all duration-500 hover:shadow-lg hover:shadow-indigo-500/5 hover:-translate-y-1"
-              >
+              <TiltCard key={project.title} project={project} />
+            ))}
+          </AnimatePresence>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+/* ── 3D Tilt Card ────────────────────────────────────────────────────── */
+
+function TiltCard({ project }: { project: (typeof projects)[0] }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!ref.current) return;
+    const rect = ref.current.getBoundingClientRect();
+    mouseX.set(e.clientX - rect.left);
+    mouseY.set(e.clientY - rect.top);
+  };
+
+  const spotlightBg = useMotionTemplate`radial-gradient(350px circle at ${mouseX}px ${mouseY}px, rgba(99,102,241,0.08), transparent 80%)`;
+
+  return (
+    <motion.div
+      ref={ref}
+      layout
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
+      onMouseMove={handleMouseMove}
+      className="relative glass rounded-2xl overflow-hidden group hover:border-indigo-500/20 transition-all duration-500 hover:shadow-lg hover:shadow-indigo-500/5 tilt-card"
+      style={{ perspective: '1000px' }}
+    >
+      {/* Spotlight gradient overlay following cursor */}
+      <motion.div
+        className="pointer-events-none absolute inset-0 z-20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+        style={{ background: spotlightBg }}
+      />
+
+      {/* Animated gradient border on hover */}
+      <div className="absolute inset-0 rounded-2xl gradient-border-animate opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+
                 {/* Card image / emoji */}
                 <div
                   className={`h-44 bg-gradient-to-br ${project.gradient} flex items-center justify-center relative overflow-hidden`}
@@ -116,17 +153,19 @@ export default function Projects() {
                   <span className="text-6xl transition-transform duration-500 group-hover:scale-125 group-hover:rotate-6 select-none">
                     {project.emoji}
                   </span>
+                  {/* Shimmer sweep */}
+                  <div className="absolute inset-0 shimmer-sweep opacity-0 group-hover:opacity-100" />
                   {/* Hover overlay */}
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                     <a
                       href={project.github}
-                      className="w-10 h-10 rounded-full bg-white/10 backdrop-blur flex items-center justify-center text-white hover:bg-white/20 transition-colors"
+                      className="w-10 h-10 rounded-full bg-white/10 backdrop-blur flex items-center justify-center text-white hover:bg-white/20 transition-colors hover:scale-110 transform"
                     >
                       <FaGithub size={18} />
                     </a>
                     <a
                       href={project.live}
-                      className="w-10 h-10 rounded-full bg-white/10 backdrop-blur flex items-center justify-center text-white hover:bg-white/20 transition-colors"
+                      className="w-10 h-10 rounded-full bg-white/10 backdrop-blur flex items-center justify-center text-white hover:bg-white/20 transition-colors hover:scale-110 transform"
                     >
                       <FaExternalLinkAlt size={14} />
                     </a>
@@ -134,7 +173,7 @@ export default function Projects() {
                 </div>
 
                 {/* Card body */}
-                <div className="p-6">
+                <div className="p-6 relative z-10">
                   <h3 className="text-lg font-bold text-white mb-2 group-hover:text-indigo-300 transition-colors">
                     {project.title}
                   </h3>
@@ -146,18 +185,14 @@ export default function Projects() {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-[11px] px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-300/80 border border-indigo-500/15 font-medium"
+                        className="text-[11px] px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-300/80 border border-indigo-500/15 font-medium
+                          transition-all duration-300 hover:bg-indigo-500/20 hover:border-indigo-500/30"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
                 </div>
-              </motion.div>
-            ))}
-          </AnimatePresence>
-        </motion.div>
-      </div>
-    </section>
+    </motion.div>
   );
 }

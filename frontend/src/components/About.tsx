@@ -128,8 +128,8 @@ export default function About() {
         {/* Stats counters */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24">
           {[
-            { end: 99, suffix: '', label: 'ICPC Global Rank' },
-            { end: 3, suffix: '', label: 'ICPC India Rank' },
+            { end: 99, suffix: '', label: "ICPC Taiwan'24 Global Rank" },
+            { end: 3, suffix: '', label: "ICPC Taiwan'24 India Rank" },
             { end: 2, suffix: '', label: 'Internships' },
             { end: 10, suffix: '+', label: 'Technologies' },
           ].map((stat) => (

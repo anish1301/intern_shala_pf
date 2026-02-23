@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { HiArrowDown } from 'react-icons/hi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiCodeforces, SiCodechef } from 'react-icons/si';
 
 const roles = [
   'Full Stack Developer',
@@ -37,16 +38,17 @@ export default function Hero() {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.15, delayChildren: 0.2 },
+      transition: { staggerChildren: 0.18, delayChildren: 0.3 },
     },
   };
 
   const childVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 40, filter: 'blur(10px)' },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] },
+      filter: 'blur(0px)',
+      transition: { duration: 0.9, ease: [0.25, 0.1, 0.25, 1] },
     },
   };
 
@@ -76,7 +78,7 @@ export default function Hero() {
           variants={childVariants}
           className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight"
         >
-          <span className="gradient-text">Anish Kumar</span>
+          <span className="gradient-text shimmer-text">Anish Kumar</span>
         </motion.h1>
 
         <motion.div
@@ -133,6 +135,22 @@ export default function Hero() {
             className="text-gray-500 hover:text-white transition-all duration-300 hover:scale-125 hover:-translate-y-0.5"
           >
             <FaLinkedin size={22} />
+          </a>
+          <a
+            href="https://codeforces.com/profile/anish1301"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-cyan-400 transition-all duration-300 hover:scale-125 hover:-translate-y-0.5"
+          >
+            <SiCodeforces size={22} />
+          </a>
+          <a
+            href="https://codechef.com/users/anish1301"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-amber-400 transition-all duration-300 hover:scale-125 hover:-translate-y-0.5"
+          >
+            <SiCodechef size={22} />
           </a>
           <div className="w-12 h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent" />
           <span className="text-gray-600 text-sm">Imphal, Manipur, India</span>
